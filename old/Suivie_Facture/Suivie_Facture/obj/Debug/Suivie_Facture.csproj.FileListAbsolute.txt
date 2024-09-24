@@ -1,0 +1,64 @@
+C:\Users\TLSIMO\Desktop\Suivie_Facture\Suivie_Facture\bin\Debug\Suivie_Facture.exe.config
+C:\Users\TLSIMO\Desktop\Suivie_Facture\Suivie_Facture\bin\Debug\Suivie_Facture.exe
+C:\Users\TLSIMO\Desktop\Suivie_Facture\Suivie_Facture\bin\Debug\Suivie_Facture.pdb
+C:\Users\TLSIMO\Desktop\Suivie_Facture\Suivie_Facture\obj\Debug\Suivie_Facture.csproj.AssemblyReference.cache
+C:\Users\TLSIMO\Desktop\Suivie_Facture\Suivie_Facture\obj\Debug\Suivie_Facture.csproj.SuggestedBindingRedirects.cache
+C:\Users\TLSIMO\Desktop\Suivie_Facture\Suivie_Facture\obj\Debug\Suivie_Facture.Properties.Resources.resources
+C:\Users\TLSIMO\Desktop\Suivie_Facture\Suivie_Facture\obj\Debug\Suivie_Facture.csproj.GenerateResource.cache
+C:\Users\TLSIMO\Desktop\Suivie_Facture\Suivie_Facture\obj\Debug\Suivie_Facture.csproj.CoreCompileInputs.cache
+C:\Users\TLSIMO\Desktop\Suivie_Facture\Suivie_Facture\obj\Debug\Suivie_Facture.exe
+C:\Users\TLSIMO\Desktop\Suivie_Facture\Suivie_Facture\obj\Debug\Suivie_Facture.pdb
+C:\Users\TLSIMO\Desktop\Suivie_Facture\Suivie_Facture\obj\Debug\Suivie_Facture.Login2.resources
+E:\Suivie_Facture\Suivie_Facture\bin\Debug\Suivie_Facture.exe.config
+E:\Suivie_Facture\Suivie_Facture\bin\Debug\Suivie_Facture.exe
+E:\Suivie_Facture\Suivie_Facture\bin\Debug\Suivie_Facture.pdb
+E:\Suivie_Facture\Suivie_Facture\obj\Debug\Suivie_Facture.csproj.AssemblyReference.cache
+E:\Suivie_Facture\Suivie_Facture\obj\Debug\Suivie_Facture.csproj.SuggestedBindingRedirects.cache
+E:\Suivie_Facture\Suivie_Facture\obj\Debug\Suivie_Facture.Login2.resources
+E:\Suivie_Facture\Suivie_Facture\obj\Debug\Suivie_Facture.Properties.Resources.resources
+E:\Suivie_Facture\Suivie_Facture\obj\Debug\Suivie_Facture.csproj.GenerateResource.cache
+E:\Suivie_Facture\Suivie_Facture\obj\Debug\Suivie_Facture.csproj.CoreCompileInputs.cache
+E:\Suivie_Facture\Suivie_Facture\obj\Debug\Suivie_Facture.exe
+E:\Suivie_Facture\Suivie_Facture\obj\Debug\Suivie_Facture.pdb
+E:\Suivie_Facture\Suivie_Facture\obj\Debug\Suivie_Facture.Home.resources
+E:\Suivie_Facture\Suivie_Facture\obj\Debug\Suivie_Facture.Form_ACHAT.resources
+E:\Suivie_Facture\Suivie_Facture\obj\Debug\Suivie_Facture.Form_CMP.resources
+E:\Suivie_Facture\Suivie_Facture\obj\Debug\Suivie_Facture.Form_ASSDAF.resources
+E:\Suivie_Facture\Suivie_Facture\obj\Debug\Suivie_Facture.Form_BDR.resources
+E:\Suivie_Facture\Suivie_Facture\obj\Debug\Suivie_Facture.Form_consultation.resources
+F:\Suivie_Facture\Suivie_Facture\bin\Debug\Suivie_Facture.exe.config
+F:\Suivie_Facture\Suivie_Facture\bin\Debug\Suivie_Facture.exe
+F:\Suivie_Facture\Suivie_Facture\bin\Debug\Suivie_Facture.pdb
+F:\Suivie_Facture\Suivie_Facture\obj\Debug\Suivie_Facture.csproj.AssemblyReference.cache
+F:\Suivie_Facture\Suivie_Facture\obj\Debug\Suivie_Facture.csproj.SuggestedBindingRedirects.cache
+F:\Suivie_Facture\Suivie_Facture\obj\Debug\Suivie_Facture.Form_ACHAT.resources
+F:\Suivie_Facture\Suivie_Facture\obj\Debug\Suivie_Facture.Form_ASSDAF.resources
+F:\Suivie_Facture\Suivie_Facture\obj\Debug\Suivie_Facture.Form_BDR.resources
+F:\Suivie_Facture\Suivie_Facture\obj\Debug\Suivie_Facture.Form_CMP.resources
+F:\Suivie_Facture\Suivie_Facture\obj\Debug\Suivie_Facture.Form_consultation.resources
+F:\Suivie_Facture\Suivie_Facture\obj\Debug\Suivie_Facture.Home.resources
+F:\Suivie_Facture\Suivie_Facture\obj\Debug\Suivie_Facture.Login2.resources
+F:\Suivie_Facture\Suivie_Facture\obj\Debug\Suivie_Facture.Properties.Resources.resources
+F:\Suivie_Facture\Suivie_Facture\obj\Debug\Suivie_Facture.csproj.GenerateResource.cache
+F:\Suivie_Facture\Suivie_Facture\obj\Debug\Suivie_Facture.csproj.CoreCompileInputs.cache
+F:\Suivie_Facture\Suivie_Facture\obj\Debug\Suivie_Facture.exe
+F:\Suivie_Facture\Suivie_Facture\obj\Debug\Suivie_Facture.pdb
+F:\Suivie_Facture\Suivie_Facture\obj\Debug\Suivie_Facture.Form_Detail.resources
+C:\Users\m.talssi\OneDrive - DIMATIT\Bureau\Nouveau dossier\Suivie_Facture\Suivie_Facture\bin\Debug\Suivie_Facture.exe.config
+C:\Users\m.talssi\OneDrive - DIMATIT\Bureau\Nouveau dossier\Suivie_Facture\Suivie_Facture\bin\Debug\Suivie_Facture.exe
+C:\Users\m.talssi\OneDrive - DIMATIT\Bureau\Nouveau dossier\Suivie_Facture\Suivie_Facture\bin\Debug\Suivie_Facture.pdb
+C:\Users\m.talssi\OneDrive - DIMATIT\Bureau\Nouveau dossier\Suivie_Facture\Suivie_Facture\obj\Debug\Suivie_Facture.csproj.AssemblyReference.cache
+C:\Users\m.talssi\OneDrive - DIMATIT\Bureau\Nouveau dossier\Suivie_Facture\Suivie_Facture\obj\Debug\Suivie_Facture.csproj.SuggestedBindingRedirects.cache
+C:\Users\m.talssi\OneDrive - DIMATIT\Bureau\Nouveau dossier\Suivie_Facture\Suivie_Facture\obj\Debug\Suivie_Facture.Form_ACHAT.resources
+C:\Users\m.talssi\OneDrive - DIMATIT\Bureau\Nouveau dossier\Suivie_Facture\Suivie_Facture\obj\Debug\Suivie_Facture.Form_ASSDAF.resources
+C:\Users\m.talssi\OneDrive - DIMATIT\Bureau\Nouveau dossier\Suivie_Facture\Suivie_Facture\obj\Debug\Suivie_Facture.Form_BDR.resources
+C:\Users\m.talssi\OneDrive - DIMATIT\Bureau\Nouveau dossier\Suivie_Facture\Suivie_Facture\obj\Debug\Suivie_Facture.Form_CMP.resources
+C:\Users\m.talssi\OneDrive - DIMATIT\Bureau\Nouveau dossier\Suivie_Facture\Suivie_Facture\obj\Debug\Suivie_Facture.Form_consultation.resources
+C:\Users\m.talssi\OneDrive - DIMATIT\Bureau\Nouveau dossier\Suivie_Facture\Suivie_Facture\obj\Debug\Suivie_Facture.Form_Detail.resources
+C:\Users\m.talssi\OneDrive - DIMATIT\Bureau\Nouveau dossier\Suivie_Facture\Suivie_Facture\obj\Debug\Suivie_Facture.Home.resources
+C:\Users\m.talssi\OneDrive - DIMATIT\Bureau\Nouveau dossier\Suivie_Facture\Suivie_Facture\obj\Debug\Suivie_Facture.Login2.resources
+C:\Users\m.talssi\OneDrive - DIMATIT\Bureau\Nouveau dossier\Suivie_Facture\Suivie_Facture\obj\Debug\Suivie_Facture.Properties.Resources.resources
+C:\Users\m.talssi\OneDrive - DIMATIT\Bureau\Nouveau dossier\Suivie_Facture\Suivie_Facture\obj\Debug\Suivie_Facture.csproj.GenerateResource.cache
+C:\Users\m.talssi\OneDrive - DIMATIT\Bureau\Nouveau dossier\Suivie_Facture\Suivie_Facture\obj\Debug\Suivie_Facture.csproj.CoreCompileInputs.cache
+C:\Users\m.talssi\OneDrive - DIMATIT\Bureau\Nouveau dossier\Suivie_Facture\Suivie_Facture\obj\Debug\Suivie_Facture.exe
+C:\Users\m.talssi\OneDrive - DIMATIT\Bureau\Nouveau dossier\Suivie_Facture\Suivie_Facture\obj\Debug\Suivie_Facture.pdb

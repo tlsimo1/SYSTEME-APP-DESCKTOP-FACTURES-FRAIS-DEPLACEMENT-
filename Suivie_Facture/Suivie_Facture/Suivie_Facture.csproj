@@ -1,0 +1,608 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0FD49880-5B44-47B3-AE44-F7D1CC647D50}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Suivie_Facture</RootNamespace>
+    <AssemblyName>Suivie_Facture</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\m.talssi\OneDrive - DIMATIT\Bureau\appliVS_APPSysteme\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>true</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ProductName>FACTURE</ProductName>
+    <PublisherName>TALSSI</PublisherName>
+    <MinimumRequiredVersion>1.0.0.0</MinimumRequiredVersion>
+    <ApplicationRevision>60</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <BootstrapperComponentsUrl>C:\Users\m.talssi\OneDrive - DIMATIT\Bureau\appliVS</BootstrapperComponentsUrl>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>téléchargement %281%29.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>6832495A22EC9F9238E069B65C65A1E9A63B8FFD</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Suivie_Facture_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Office.Interop.Excel.15.0.4795.1001\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Tulpep.NotificationWindow, Version=1.1.38.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Tulpep.NotificationWindow.1.1.38\lib\net40\Tulpep.NotificationWindow.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BL\Achat_BL.cs" />
+    <Compile Include="BL\AssDAF_BL.cs" />
+    <Compile Include="BL\ChefCmp_BL.cs" />
+    <Compile Include="BL\Code_AnalytiqueBL.cs" />
+    <Compile Include="BL\Com_BL.cs" />
+    <Compile Include="BL\Facture_BL.cs" />
+    <Compile Include="BL\Frais_DeplacementBL.cs" />
+    <Compile Include="BL\PersonnelBL.cs" />
+    <Compile Include="BL\Rapport_Etat_BL.cs" />
+    <Compile Include="BL\User_BL.cs" />
+    <Compile Include="Class\Achat.cs" />
+    <Compile Include="Class\Assistate_DAF.cs" />
+    <Compile Include="Class\Bureau_Ordre.cs" />
+    <Compile Include="Class\Code_Analytique.cs" />
+    <Compile Include="Class\Comptabilite.cs" />
+    <Compile Include="Class\Connexion.cs" />
+    <Compile Include="Class\Facture.cs" />
+    <Compile Include="Class\Frais_Deplacement.cs" />
+    <Compile Include="Class\Personnel.cs" />
+    <Compile Include="Class\ProgressDataGridView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Class\Rapport_Etat.cs" />
+    <Compile Include="Class\Variable.cs" />
+    <Compile Include="DataAccess\Achat_DAL.cs" />
+    <Compile Include="DataAccess\AssDAF_DAL.cs" />
+    <Compile Include="BL\Brd_BL.cs" />
+    <Compile Include="DataAccess\ChefCmp_DAL.cs" />
+    <Compile Include="DataAccess\Code_AnalytiqueDAL.cs" />
+    <Compile Include="DataAccess\Com_DAL.cs" />
+    <Compile Include="DataAccess\FactureDAL.cs" />
+    <Compile Include="DataAccess\Brd_DAL.cs" />
+    <Compile Include="DataAccess\Frais_DeplacementDAL.cs" />
+    <Compile Include="DataAccess\PersonnelDAL.cs" />
+    <Compile Include="DataAccess\Rapport_Etat_DAL.cs" />
+    <Compile Include="DataAccess\User_DAL.cs" />
+    <Compile Include="Factures.cs">
+      <DependentUpon>Factures.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Factures.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Factures.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Form_ACHAT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_ACHAT.Designer.cs">
+      <DependentUpon>Form_ACHAT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_ASSDAF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_ASSDAF.Designer.cs">
+      <DependentUpon>Form_ASSDAF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_BDR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_BDR.Designer.cs">
+      <DependentUpon>Form_BDR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_BL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_BL.Designer.cs">
+      <DependentUpon>Form_BL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_ChefCMP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_ChefCMP.Designer.cs">
+      <DependentUpon>Form_ChefCMP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_CMP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_CMP.Designer.cs">
+      <DependentUpon>Form_CMP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_consultation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_consultation.Designer.cs">
+      <DependentUpon>Form_consultation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Detail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Detail.Designer.cs">
+      <DependentUpon>Form_Detail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form_param.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_param.Designer.cs">
+      <DependentUpon>form_param.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_UpdateFacture.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_UpdateFacture.Designer.cs">
+      <DependentUpon>Form_UpdateFacture.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frais_deplacement\CRY\Etat_Avancement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frais_deplacement\CRY\Etat_Avancement.Designer.cs">
+      <DependentUpon>Etat_Avancement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frais_deplacement\CRY\FraisCirculation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frais_deplacement\CRY\FraisCirculation.Designer.cs">
+      <DependentUpon>FraisCirculation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frais_deplacement\CRY\FraisModRegelemnt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frais_deplacement\CRY\FraisModRegelemnt.Designer.cs">
+      <DependentUpon>FraisModRegelemnt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frais_deplacement\CRY\FraisProvision.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frais_deplacement\CRY\FraisProvision.Designer.cs">
+      <DependentUpon>FraisProvision.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frais_deplacement\CRY\imp_fraisANT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frais_deplacement\CRY\imp_fraisANT.Designer.cs">
+      <DependentUpon>imp_fraisANT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frais_deplacement\CRY\imp_FraisCirculation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frais_deplacement\CRY\imp_FraisCirculation.Designer.cs">
+      <DependentUpon>imp_FraisCirculation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frais_deplacement\CRY\Imp_ModReg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frais_deplacement\CRY\Imp_ModReg.Designer.cs">
+      <DependentUpon>Imp_ModReg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frais_deplacement\CRY\imp_Prov.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frais_deplacement\CRY\imp_Prov.Designer.cs">
+      <DependentUpon>imp_Prov.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frais_deplacement\CRY\rpt_EtatProv.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_EtatProv.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Frais_deplacement\CRY\rpt_fraisANT.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_fraisANT.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Frais_deplacement\CRY\rpt_FraisCirculation.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_FraisCirculation.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Frais_deplacement\CRY\rpt_ModReg1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_ModReg.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Frais_deplacement\dataset\DS_ETAT.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_ETAT.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Frais_deplacement\Etat_Test.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frais_deplacement\Etat_Test.Designer.cs">
+      <DependentUpon>Etat_Test.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frais_deplacement\Imp_CodeAnalytique.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frais_deplacement\Imp_CodeAnalytique.Designer.cs">
+      <DependentUpon>Imp_CodeAnalytique.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frais_deplacement\Imp_FraisDeplacement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frais_deplacement\Imp_FraisDeplacement.Designer.cs">
+      <DependentUpon>Imp_FraisDeplacement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frais_deplacement\Imp_Personnel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frais_deplacement\Imp_Personnel.Designer.cs">
+      <DependentUpon>Imp_Personnel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frais_deplacement\CRY\rpt_FraisAvancment.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_FraisAvancment.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home02.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home02.Designer.cs">
+      <DependentUpon>Home02.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Imprimer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Imprimer.Designer.cs">
+      <DependentUpon>Imprimer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Imprimer_Facture - Copier.cs">
+      <DependentUpon>Imprimer_Factures_Achats.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Imprimer_Facture.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Imprimer_Factures.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Imprimer_Factures_Achats.cs">
+      <DependentUpon>Imprimer_Factures_Achats.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Imprimer_Factures.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Imprimer_Factures.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Login2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login2.Designer.cs">
+      <DependentUpon>Login2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form_ACHAT.resx">
+      <DependentUpon>Form_ACHAT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_ASSDAF.resx">
+      <DependentUpon>Form_ASSDAF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_BDR.resx">
+      <DependentUpon>Form_BDR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_BL.resx">
+      <DependentUpon>Form_BL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_ChefCMP.resx">
+      <DependentUpon>Form_ChefCMP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_CMP.resx">
+      <DependentUpon>Form_CMP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_consultation.resx">
+      <DependentUpon>Form_consultation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Detail.resx">
+      <DependentUpon>Form_Detail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form_param.resx">
+      <DependentUpon>form_param.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_UpdateFacture.resx">
+      <DependentUpon>Form_UpdateFacture.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frais_deplacement\CRY\Etat_Avancement.resx">
+      <DependentUpon>Etat_Avancement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frais_deplacement\CRY\FraisCirculation.resx">
+      <DependentUpon>FraisCirculation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frais_deplacement\CRY\FraisModRegelemnt.resx">
+      <DependentUpon>FraisModRegelemnt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frais_deplacement\CRY\FraisProvision.resx">
+      <DependentUpon>FraisProvision.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frais_deplacement\CRY\imp_fraisANT.resx">
+      <DependentUpon>imp_fraisANT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frais_deplacement\CRY\imp_FraisCirculation.resx">
+      <DependentUpon>imp_FraisCirculation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frais_deplacement\CRY\Imp_ModReg.resx">
+      <DependentUpon>Imp_ModReg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frais_deplacement\CRY\imp_Prov.resx">
+      <DependentUpon>imp_Prov.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frais_deplacement\CRY\rpt_EtatProv.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_EtatProv.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frais_deplacement\CRY\rpt_fraisANT.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_fraisANT.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frais_deplacement\CRY\rpt_FraisCirculation.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_FraisCirculation.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frais_deplacement\CRY\rpt_ModReg.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_ModReg1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frais_deplacement\Etat_Test.resx">
+      <DependentUpon>Etat_Test.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frais_deplacement\Imp_CodeAnalytique.resx">
+      <DependentUpon>Imp_CodeAnalytique.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frais_deplacement\Imp_FraisDeplacement.resx">
+      <DependentUpon>Imp_FraisDeplacement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frais_deplacement\Imp_Personnel.resx">
+      <DependentUpon>Imp_Personnel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frais_deplacement\CRY\rpt_FraisAvancment.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_FraisAvancment.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home02.resx">
+      <DependentUpon>Home02.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imprimer.resx">
+      <DependentUpon>Imprimer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imprimer_Factures_Achats.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Imprimer_Factures_Achats.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imprimer_Factures.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Imprimer_Factures.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login2.resx">
+      <DependentUpon>Login2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Factures.xsc">
+      <DependentUpon>Factures.xsd</DependentUpon>
+    </None>
+    <None Include="Factures.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Factures.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Factures.xss">
+      <DependentUpon>Factures.xsd</DependentUpon>
+    </None>
+    <None Include="Frais_deplacement\dataset\DS_ETAT.xsc">
+      <DependentUpon>DS_ETAT.xsd</DependentUpon>
+    </None>
+    <None Include="Frais_deplacement\dataset\DS_ETAT.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_ETAT.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Frais_deplacement\dataset\DS_ETAT.xss">
+      <DependentUpon>DS_ETAT.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Suivie_Facture_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\detail1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\detail2.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\valide1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\valide2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\case-a-cocher.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_checked_radio_button_40px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_in_progress_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_opened_folder_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_google_web_search_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_save_close_32px_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DELETE2.png" />
+    <None Include="Resources\edit1.png" />
+    <None Include="Resources\icons8_add_50px.png" />
+    <None Include="Resources\icons8_add_file_24px_1.png" />
+    <None Include="Resources\icons8_add_new_24px.png" />
+    <None Include="Resources\excel24_0.png" />
+    <Content Include="téléchargement %281%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6 %28x86 et x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="SAP.CrystalReports14.NET.2.0">
+      <Visible>False</Visible>
+      <ProductName>SAP Crystal Reports Runtime Engine for .NET Framework</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="CrystalDecisions.CrystalReports.Engine">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Prerequisite</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.ClientDoc">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Prerequisite</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Frais_deplacement\Etat\" />
+    <Folder Include="Frais_deplacement\Rapport\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

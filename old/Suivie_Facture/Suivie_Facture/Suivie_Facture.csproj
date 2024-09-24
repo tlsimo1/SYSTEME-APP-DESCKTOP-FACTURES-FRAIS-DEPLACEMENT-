@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0FD49880-5B44-47B3-AE44-F7D1CC647D50}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Suivie_Facture</RootNamespace>
+    <AssemblyName>Suivie_Facture</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BL\Achat_BL.cs" />
+    <Compile Include="BL\AssDAF_BL.cs" />
+    <Compile Include="BL\Com_BL.cs" />
+    <Compile Include="BL\Facture_BL.cs" />
+    <Compile Include="Class\Achat.cs" />
+    <Compile Include="Class\Assistate_DAF.cs" />
+    <Compile Include="Class\Bureau_Ordre.cs" />
+    <Compile Include="Class\Comptabilite.cs" />
+    <Compile Include="Class\Connexion.cs" />
+    <Compile Include="Class\Facture.cs" />
+    <Compile Include="Class\Variable.cs" />
+    <Compile Include="DataAccess\Achat_DAL.cs" />
+    <Compile Include="DataAccess\AssDAF_DAL.cs" />
+    <Compile Include="BL\Brd_BL.cs" />
+    <Compile Include="DataAccess\Com_DAL.cs" />
+    <Compile Include="DataAccess\FactureDAL.cs" />
+    <Compile Include="DataAccess\Brd_DAL.cs" />
+    <Compile Include="Form_ACHAT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_ACHAT.Designer.cs">
+      <DependentUpon>Form_ACHAT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_ASSDAF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_ASSDAF.Designer.cs">
+      <DependentUpon>Form_ASSDAF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_BDR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_BDR.Designer.cs">
+      <DependentUpon>Form_BDR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_CMP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_CMP.Designer.cs">
+      <DependentUpon>Form_CMP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_consultation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_consultation.Designer.cs">
+      <DependentUpon>Form_consultation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Detail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Detail.Designer.cs">
+      <DependentUpon>Form_Detail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login2.Designer.cs">
+      <DependentUpon>Login2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form_ACHAT.resx">
+      <DependentUpon>Form_ACHAT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_ASSDAF.resx">
+      <DependentUpon>Form_ASSDAF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_BDR.resx">
+      <DependentUpon>Form_BDR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_CMP.resx">
+      <DependentUpon>Form_CMP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_consultation.resx">
+      <DependentUpon>Form_consultation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Detail.resx">
+      <DependentUpon>Form_Detail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login2.resx">
+      <DependentUpon>Login2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\detail1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\detail2.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\valide1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\valide2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\case-a-cocher.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_checked_radio_button_40px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_in_progress_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_opened_folder_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_google_web_search_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_save_close_32px_1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
